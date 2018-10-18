@@ -1,14 +1,13 @@
-#####################################################################
-#!/usr/bin/env python                                               #
-# script by MikeT                                                   #
-# ping a list of given subnets with threads for increase speed      #
-# use standard linux /bin/ping utility                              #
-# example python fpsweep.py -s 10.0.0. -r 1                         #
-# script ask for 3 input:                                           #
-#			1. -s class c subnet " 192.168.1. "                           #
-#			2. -r <1-254>                                                 #
-#     3. -h --help                                                  #
-#####################################################################
+#!/usr/bin/env python                                          
+# script by MikeT                                              
+# ping a list of given subnets with threads for increase speed 
+# use standard linux /bin/ping utility                         
+# example python fpsweep.py -s 10.0.0. -r 1                    
+# script ask for 3 input:                                      
+#			1. -s class c subnet " 192.168.1. "                      
+#			2. -r <1-254>                                            
+#     3. -h --help                                             
+#
 from threading import Thread
 import subprocess
 import Queue
